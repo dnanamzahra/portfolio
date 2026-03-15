@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden">
       {/* Background Image */}
-      {/* <div className="hidden md:block absolute inset-0 z-0">
+      <div className="hidden md:block absolute inset-0 z-0">
         <Image
           src="/hero-bg.jpg"
           alt="Fresh vegetables and healthy foods"
@@ -18,7 +18,7 @@ export default function HeroSection() {
           priority
         />
         <div className="absolute inset-0 bg-black/40"></div>
-      </div> */}
+      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
@@ -54,7 +54,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="flex justify-center items-center">
+          {/* <div className="flex justify-center items-center">
             <div
               className="
               relative 
@@ -69,7 +69,7 @@ export default function HeroSection() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </div> */}
           <div className="md:hidden flex flex-col items-center text-center">
             <h2 className="text-3xl font-bold">Dr. Anum Zahra</h2>
             <p className="text-lg md:text-xl opacity-90">
