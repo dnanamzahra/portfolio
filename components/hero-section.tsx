@@ -22,13 +22,13 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="text-white space-y-6 hidden md:block">
+        <div className="grid grid-cols-1 gap-8 md:gap-12 items-center">
+          <div className="text-white space-y-6 hidden md:block ">
             <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-balance">
+              <h1 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 ">
                 A Healthier You Starts with the Right Nutrition{" "}
               </h1>
-              <p className="text-lg md:text-xl opacity-90">
+              <p className="text-md md:text-lg font-semibold opacity-90">
                 Personalized diet plans by Clinical Dietitian Dr. Anum Zahra to
                 help you manage weight, improve lifestyle diseases, and achieve
                 long-term wellness.
@@ -70,14 +70,22 @@ export default function HeroSection() {
               />
             </div>
           </div> */}
+
           <div className="md:hidden flex flex-col items-center text-center">
             <h2 className="text-3xl font-bold">Dr. Anum Zahra</h2>
-            <p className="text-lg md:text-xl opacity-90">
-              Clinical Dietitian & Nutrition Expert
+            <p className="text-sm md:text-xl opacity-90 mt-2">
+              Certified Clinical Dietitian & Nutrition Expert
+            </p>
+            <p className="text-xs md:text-xl opacity-90 mt-2">
+              Helping you achieve sustainable weight loss, balanced nutrition,
+              and better health.
             </p>
             <div className="flex md:flex-col flex-row gap-4 pt-4">
               <Link href="/services">
-                <Button className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground">
+                <Button
+                  size="sm"
+                  className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground"
+                >
                   Services
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -87,7 +95,10 @@ export default function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="w-full sm:w-auto bg-primary hover:bg-accent text-primary-foreground">
+                <Button
+                  size="sm"
+                  className="w-full sm:w-auto bg-primary hover:bg-accent text-primary-foreground"
+                >
                   Schedule Consultation
                 </Button>
               </a>

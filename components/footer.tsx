@@ -1,56 +1,11 @@
 "use client";
 
+import { socialLinks } from "@/lib/social-links";
 import Link from "next/link";
-import {
-  Mail,
-  Phone,
-  Linkedin,
-  Instagram,
-  Facebook,
-  Calendar,
-} from "lucide-react";
 import { Button } from "./ui/button";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
-  const socialLinks = [
-    {
-      icon: Linkedin,
-      href: "https://www.linkedin.com/in/dr_anam_zahra",
-      label: "LinkedIn",
-    },
-    {
-      icon: Instagram,
-      href: "https://www.instagram.com/dn_anum_zahra",
-      label: "Instagram",
-    },
-    {
-      icon: Facebook,
-      href: "https://www.facebook.com/dr_anam_zahra",
-      label: "Facebook",
-    },
-    {
-      icon: Calendar,
-      href: "https://calendar.app.google/sNpWAgmwrDM9bis7A",
-      label: "Book Consultation",
-    },
-  ];
-
-  const contactInfo = [
-    {
-      icon: Mail,
-      label: "Email",
-      value: "hello@dranam.com",
-      href: "mailto:hello@dranam.com",
-    },
-    {
-      icon: Phone,
-      label: "WhatsApp",
-      value: "+92 302 461 8062",
-      href: "https://wa.me/923024618062",
-    },
-  ];
 
   const quickLinks = [
     { href: "/", label: "Home" },
@@ -64,22 +19,22 @@ export default function Footer() {
 
   return (
     <footer className="bg-primary text-primary-foreground py-12 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* About Section */}
           <div className="md:col-span-2">
             <h3 className="text-lg font-bold mb-3">Dr. Anum Zahra</h3>
             <p className="text-sm opacity-90 leading-relaxed mb-4">
-              A Clinical Dietitian dedicated to helping individuals achieve
-              better health through personalized nutrition, sustainable diet
-              plans, and evidence-based guidance.
+              A clinical dietitian committed to helping individuals improve
+              their health through personalized nutrition plans, sustainable
+              diet strategies, and evidence-based guidance.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-bold mb-2">Quick Links</h3>
+            <ul className="space-y-1">
               {quickLinks.map((link) => (
                 <li key={link.label}>
                   <Link
@@ -104,30 +59,11 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Contact & Social */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Connect</h3>
-            <div className="space-y-3">
-              {contactInfo.map((info) => (
-                <a
-                  key={info.label}
-                  href={info.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm flex items-center gap-2 hover:opacity-100 opacity-90 transition-opacity"
-                >
-                  <info.icon className="w-4 h-4" />
-                  <span>{info.value}</span>
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Social Icons */}
-        <div className="border-t border-primary-foreground border-opacity-20 pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-          <div className="flex gap-4">
+        <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-wrap gap-3 md:gap-4 justify-center">
             {socialLinks.map((social) => (
               <a
                 key={social.label}
@@ -135,15 +71,17 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="w-10 h-10 rounded-full bg-primary-foreground bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-all duration-200"
+                className={`p-3 rounded-full bg-secondary text-primary transition-all duration-200 ${social.color}`}
               >
-                <social.icon className="w-5 h-5" />
+                <social.icon className="w-4 h-4 md:w-6 md:h-6" />
               </a>
             ))}
           </div>
+        </div>
 
-          {/* Copyright */}
-          <p className="text-sm opacity-75">
+        {/* Copyright */}
+        <div className="border-t border-primary-foreground border-opacity-20 mt-8 pt-6 text-center">
+          <p className="text-sm opacity-80">
             © {currentYear} Dr. Anum Zahra. All rights reserved.
           </p>
         </div>

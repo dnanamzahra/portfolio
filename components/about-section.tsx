@@ -1,15 +1,7 @@
 "use client";
 
 import { Card } from "./ui/card";
-import { Button } from "./ui/button";
-import {
-  Linkedin,
-  Instagram,
-  Facebook,
-  Phone,
-  Mail,
-  Calendar,
-} from "lucide-react";
+import { socialLinks } from "@/lib/social-links";
 
 export default function AboutSection() {
   const approaches = [
@@ -39,67 +31,33 @@ export default function AboutSection() {
     },
   ];
 
-  const socialLinks = [
-    {
-      icon: Instagram,
-      href: "https://www.instagram.com/dn_anum_zahra",
-      label: "Instagram",
-      color: "hover:text-pink-600",
-    },
-    {
-      icon: Facebook,
-      href: "https://www.facebook.com/dr_anam_zahra",
-      label: "Facebook",
-      color: "hover:text-blue-700",
-    },
-    {
-      icon: Linkedin,
-      href: "https://www.linkedin.com/in/dr_anam_zahra",
-      label: "LinkedIn",
-      color: "hover:text-blue-600",
-    },
-    {
-      icon: Mail,
-      label: "Email",
-      href: "mailto:hello@dranam.com",
-      color: "hover:text-blue-600",
-    },
-    {
-      icon: Phone,
-      label: "WhatsApp",
-      color: "hover:text-blue-600",
-      href: "https://wa.me/923024618062",
-    },
-    {
-      icon: Calendar,
-      label: "Schedule",
-      color: "hover:text-blue-600",
-      href: "https://calendar.app.google/sNpWAgmwrDM9bis7A",
-    },
-  ];
-
   return (
-    <section className="flex flex-col gap-16 py-16 md:py-24  bg-background">
+    <section className="flex flex-col gap-8 md:gap-16 py-8 md:py-24  bg-background">
       <div className="hidden px-3 md:flex flex-col mx-auto gap-6 justify-center text-center max-w-4xl items-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground text-balance text-left">
           About Dr. Anum Zahra
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed text-wrap text-justify">
-          Dr. Anum Zahra is a dedicated Clinical Dietitian and Nutritionist who
-          helps individuals achieve better health through personalized nutrition
-          and sustainable lifestyle changes. With professional experience at
-          Karakoram International University Gilgit (KIU), she provides expert
-          guidance in weight management, diabetes care, sports nutrition, and
-          medical nutrition therapy.
+          Dr. Anam Zahra is a Certified Clinical Dietitian and Nutritionist
+          dedicated to helping individuals improve their health through
+          personalized nutrition and sustainable lifestyle changes. With
+          professional experience at Karakoram International University Gilgit
+          (KIU), she provides expert guidance in weight management, diabetes
+          care, sports nutrition, and medical nutrition therapy.
         </p>
 
         <p className="text-lg text-muted-foreground leading-relaxed text-wrap text-justify">
-          Her approach is rooted in evidence-based nutrition, mindful eating,
-          and practical meal planning. She empowers clients to make informed
-          dietary choices that support long-term health and well-being. Whether
-          managing a medical condition or improving overall wellness, Dr. Anum
-          offers personalized nutritional counseling to help clients build
-          healthier and more balanced lives.
+          Her approach focuses on evidence-based nutrition, mindful eating, and
+          practical meal planning, helping clients adopt healthy habits that fit
+          their daily lives. Dr. Anam believes that sustainable results come
+          from balanced nutrition and consistent lifestyle improvements rather
+          than short-term dieting.
+        </p>
+
+        <p className="text-lg text-muted-foreground leading-relaxed text-wrap text-justify">
+          Through personalized diet plans and nutritional counseling, she
+          supports individuals in managing medical conditions, improving overall
+          wellness, and building a healthier and more balanced life.
         </p>
 
         <div className="flex flex-col justify-center items-center">
@@ -113,7 +71,7 @@ export default function AboutSection() {
                 aria-label={social.label}
                 className={`p-3 rounded-full bg-secondary text-primary transition-all duration-200 ${social.color}`}
               >
-                <social.icon className="w-6 h-6" />
+                <social.icon className="w-4! h-4! md:w-6 md:h-6" />
               </a>
             ))}
           </div>
@@ -121,29 +79,35 @@ export default function AboutSection() {
       </div>
 
       <div className="px-3 flex md:hidden flex-col mx-auto gap-6 justify-center text-center max-w-4xl items-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground text-balance text-left">
+        <h2 className="text-2xl md:text-4xl font-bold text-foreground text-balance">
           About
         </h2>
-        <p className="hidden md:blocktext-lg text-muted-foreground leading-relaxed text-wrap text-justify">
-          Dr. Anum Zahra is a dedicated Clinical Dietitian and Nutritionist who
-          helps individuals achieve better health through personalized nutrition
-          and sustainable lifestyle changes. With professional experience at
-          Karakoram International University Gilgit (KIU), she provides expert
-          guidance in weight management, diabetes care, sports nutrition, and
-          medical nutrition therapy.
+        <p className="text-xs text-muted-foreground leading-relaxed text-wrap text-justify">
+          Dr. Anam Zahra is a Clinical Dietitian and Nutritionist dedicated to
+          helping individuals improve their health through personalized
+          nutrition and sustainable lifestyle changes
         </p>
 
-        <p className="text-lg text-muted-foreground leading-relaxed text-wrap text-justify">
-          Her approach is rooted in evidence-based nutrition, mindful eating,
-          and practical meal planning. She empowers clients to make informed
-          dietary choices that support long-term health and well-being. Whether
-          managing a medical condition or improving overall wellness, Dr. Anum
-          offers personalized nutritional counseling to help clients build
-          healthier and more balanced lives.
+        <p className="text-xs text-muted-foreground leading-relaxed text-wrap text-justify">
+          With professional experience at Karakoram International University
+          Gilgit (KIU), she provides guidance in weight management, diabetes
+          care, sports nutrition, and medical nutrition therapy.
+        </p>
+
+        <p className="text-xs text-muted-foreground leading-relaxed text-wrap text-justify">
+          Her approach focuses on evidence-based nutrition, mindful eating, and
+          practical meal planning, helping people build healthy habits that fit
+          their everyday lives.
+        </p>
+
+        <p className="text-xs text-muted-foreground leading-relaxed text-wrap text-justify">
+          Through personalized diet plans and nutritional counseling, Dr. Anam
+          supports individuals in improving their health, managing medical
+          conditions, and achieving long-term wellness.
         </p>
 
         <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-wrap gap-2 mdgap-4 justify-center">
             {socialLinks.map((social) => (
               <a
                 key={social.label}
@@ -151,7 +115,7 @@ export default function AboutSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className={`p-3 rounded-full bg-secondary text-primary transition-all duration-200 ${social.color}`}
+                className={`p-2 md:p-3 rounded-full bg-secondary text-primary transition-all duration-200 ${social.color}`}
               >
                 <social.icon className="w-6 h-6" />
               </a>
@@ -161,27 +125,27 @@ export default function AboutSection() {
       </div>
 
       <div className="flex flex-col">
-        <div className="flex flex-col mx-auto gap-6 justify-center text-center max-w-4xl items-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
+        <div className="flex flex-col mx-auto gap-2 md:gap-6 justify-center text-center max-w-4xl items-center">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground text-balance">
             My Core Approach
           </h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl">
+          <p className="text-sm md:text-lg text-muted-foreground mb-12 max-w-2xl">
             Four pillars that define my clinical methodology for achieving
             optimal wellness.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2 md:gap-6 px-6">
           {approaches.map((approach, index) => (
             <Card
               key={index}
               className="p-6 rounded-2xl bg-card border-border hover:shadow-lg transition-shadow"
             >
-              <div className="text-4xl mb-4">{approach.icon}</div>
-              <h3 className="text-xl font-bold text-foreground mb-3">
+              <div className="text-4xl mb-2 md:mb-4">{approach.icon}</div>
+              <h3 className="text-md md:text-xl font-bold text-foreground mb-3">
                 {approach.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-xs leading-relaxed">
                 {approach.description}
               </p>
             </Card>
