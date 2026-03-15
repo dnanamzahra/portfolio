@@ -1,22 +1,23 @@
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { ArrowLeft } from 'lucide-react';
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
-  title: 'Blog Post - Dr. Anum Zahra',
-  description: 'Read nutrition and wellness articles from Dr. Anum Zahra.',
+  title: "Blog Post - Dr. Anum Zahra",
+  description: "Read nutrition and wellness articles from Dr. Anum Zahra.",
 };
 
 const blogPosts = {
-  '1': {
-    title: '7 Foods That Naturally Boost Your Metabolism',
-    category: 'Nutrition Tips',
-    date: 'March 10, 2024',
-    image: '/blog-1.jpg',
-    excerpt: 'Discover natural foods that can enhance your metabolic rate and support your health goals.',
+  "1": {
+    title: "7 Foods That Naturally Boost Your Metabolism",
+    category: "Nutrition Tips",
+    date: "March 10, 2024",
+    image: "/blog-1.jpg",
+    excerpt:
+      "Discover natural foods that can enhance your metabolic rate and support your health goals.",
     content: `
       <h2>Introduction</h2>
       <p>Your metabolism plays a crucial role in your overall health and weight management. While genetics and age do influence your metabolic rate, certain foods can naturally enhance it. In this article, we'll explore seven foods that can boost your metabolism and support your weight management goals.</p>
@@ -46,12 +47,13 @@ const blogPosts = {
       <p>Remember, while these foods can help boost your metabolism, they work best as part of a balanced, healthy diet. Combined with regular exercise and adequate sleep, these metabolism-boosting foods can support your wellness journey.</p>
     `,
   },
-  '2': {
-    title: 'Common Diet Mistakes That Are Slowing Your Weight Loss',
-    category: 'Weight Management',
-    date: 'March 8, 2024',
-    image: '/blog-2.jpg',
-    excerpt: 'Learn about common dietary pitfalls that might be preventing you from reaching your weight loss goals.',
+  "2": {
+    title: "Common Diet Mistakes That Are Slowing Your Weight Loss",
+    category: "Weight Management",
+    date: "March 8, 2024",
+    image: "/blog-2.jpg",
+    excerpt:
+      "Learn about common dietary pitfalls that might be preventing you from reaching your weight loss goals.",
     content: `
       <h2>Introduction</h2>
       <p>Weight loss can be challenging, especially when you're making common dietary mistakes without realizing it. In this article, we'll explore the most common diet mistakes that might be slowing your weight loss progress.</p>
@@ -75,12 +77,13 @@ const blogPosts = {
       <p>Avoiding these common mistakes can significantly improve your weight loss results. Focus on balanced nutrition, portion control, and sustainable habits for long-term success.</p>
     `,
   },
-  '3': {
-    title: 'A Simple Balanced Plate Formula for Everyday Healthy Eating',
-    category: 'Nutrition Tips',
-    date: 'March 5, 2024',
-    image: '/blog-3.jpg',
-    excerpt: 'Master the basics of nutrition with this easy-to-follow plate model for balanced meals.',
+  "3": {
+    title: "A Simple Balanced Plate Formula for Everyday Healthy Eating",
+    category: "Nutrition Tips",
+    date: "March 5, 2024",
+    image: "/blog-3.jpg",
+    excerpt:
+      "Master the basics of nutrition with this easy-to-follow plate model for balanced meals.",
     content: `
       <h2>Introduction</h2>
       <p>Creating balanced meals doesn't have to be complicated. Using the simple balanced plate formula, you can ensure every meal provides the right mix of nutrients.</p>
@@ -104,12 +107,13 @@ const blogPosts = {
       <p>Using this simple formula for every meal ensures balanced nutrition and supports your weight management and overall health goals.</p>
     `,
   },
-  '4': {
-    title: 'Top 5 Foods to Control Blood Sugar Naturally',
-    category: 'Diabetes',
-    date: 'March 1, 2024',
-    image: '/blog-4.jpg',
-    excerpt: 'Explore the best foods for managing blood sugar levels and preventing diabetes complications.',
+  "4": {
+    title: "Top 5 Foods to Control Blood Sugar Naturally",
+    category: "Diabetes",
+    date: "March 1, 2024",
+    image: "/blog-4.jpg",
+    excerpt:
+      "Explore the best foods for managing blood sugar levels and preventing diabetes complications.",
     content: `
       <h2>Introduction</h2>
       <p>Managing blood sugar levels is crucial for diabetes prevention and management. Certain foods can help maintain stable blood sugar and improve insulin sensitivity.</p>
@@ -136,7 +140,7 @@ const blogPosts = {
 };
 
 export default function BlogPostPage({ params }: { params: { id: string } }) {
-  const post = blogPosts[params.id as keyof typeof blogPosts] || blogPosts['1'];
+  const post = blogPosts[params.id as keyof typeof blogPosts] || blogPosts["1"];
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -157,9 +161,12 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
         <article className="py-12 md:py-20 bg-background">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Back Button */}
-            <Link href="/blog" className="inline-flex items-center text-primary hover:text-accent mb-8">
+            <Link
+              href="/blog"
+              className="inline-flex items-center text-primary hover:text-accent mb-8"
+            >
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Blog
+              Back to Articals
             </Link>
 
             {/* Article Header */}
@@ -168,18 +175,20 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                 <span className="text-sm font-medium bg-primary text-primary-foreground px-3 py-1 rounded-full">
                   {post.category}
                 </span>
-                <span className="text-sm text-muted-foreground">{post.date}</span>
+                <span className="text-sm text-muted-foreground">
+                  {post.date}
+                </span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+              <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground mb-4 text-balance">
                 {post.title}
               </h1>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-sm md:text-lg text-muted-foreground">
                 {post.excerpt}
               </p>
             </div>
 
             {/* Article Body */}
-            <div className="prose prose-lg max-w-none text-foreground">
+            <div className="text-sm md:text-lg text-foreground">
               <div
                 dangerouslySetInnerHTML={{ __html: post.content }}
                 className="space-y-4"
@@ -193,7 +202,8 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                   Want personalized nutrition guidance?
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Schedule a consultation with Dr. Anum Zahra to discuss your nutrition goals and create a personalized plan.
+                  Schedule a consultation with Dr. Anum Zahra to discuss your
+                  nutrition goals and create a personalized plan.
                 </p>
                 <a
                   href="https://calendar.app.google/sNpWAgmwrDM9bis7A"
