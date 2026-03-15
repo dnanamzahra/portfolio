@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Services - Dr. Anum Zahra",
+  title: "Services - Dn. Anum Zahra",
   description:
     "Explore comprehensive nutrition and wellness services including personalized diet plans, weight management, diabetes care, and sports nutrition.",
 };

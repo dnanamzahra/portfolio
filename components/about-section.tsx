@@ -35,10 +35,10 @@ export default function AboutSection() {
     <section className="flex flex-col gap-8 md:gap-16 py-8 md:py-24  bg-background">
       <div className="hidden px-3 md:flex flex-col mx-auto gap-6 justify-center text-center max-w-4xl items-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground text-balance text-left">
-          About Dr. Anum Zahra
+          About Dn. Anum Zahra
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed text-wrap text-justify">
-          Dr. Anam Zahra is a Certified Clinical Dietitian and Nutritionist
+          Dn. Anam Zahra is a Certified Clinical Dietitian and Nutritionist
           dedicated to helping individuals improve their health through
           personalized nutrition and sustainable lifestyle changes. With
           professional experience at Karakoram International University Gilgit
@@ -49,7 +49,7 @@ export default function AboutSection() {
         <p className="text-lg text-muted-foreground leading-relaxed text-wrap text-justify">
           Her approach focuses on evidence-based nutrition, mindful eating, and
           practical meal planning, helping clients adopt healthy habits that fit
-          their daily lives. Dr. Anam believes that sustainable results come
+          their daily lives. Dn. Anam believes that sustainable results come
           from balanced nutrition and consistent lifestyle improvements rather
           than short-term dieting.
         </p>
@@ -83,7 +83,7 @@ export default function AboutSection() {
           About
         </h2>
         <p className="text-xs text-muted-foreground leading-relaxed text-wrap text-justify">
-          Dr. Anam Zahra is a Clinical Dietitian and Nutritionist dedicated to
+          Dn. Anam Zahra is a Clinical Dietitian and Nutritionist dedicated to
           helping individuals improve their health through personalized
           nutrition and sustainable lifestyle changes
         </p>
@@ -101,7 +101,7 @@ export default function AboutSection() {
         </p>
 
         <p className="text-xs text-muted-foreground leading-relaxed text-wrap text-justify">
-          Through personalized diet plans and nutritional counseling, Dr. Anam
+          Through personalized diet plans and nutritional counseling, Dn. Anam
           supports individuals in improving their health, managing medical
           conditions, and achieving long-term wellness.
         </p>

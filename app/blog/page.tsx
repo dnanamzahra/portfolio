@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Articles - Dr. Anum Zahra",
+  title: "Articles - Dn. Anum Zahra",
   description:
-    "Read expert nutrition tips, wellness advice, and practical guidance for healthy living from Dr. Anum Zahra.",
+    "Read expert nutrition tips, wellness advice, and practical guidance for healthy living from Dn. Anum Zahra.",
 };
 
 export default function BlogPage() {

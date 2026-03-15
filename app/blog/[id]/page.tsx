@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
-  title: "Blog Post - Dr. Anum Zahra",
-  description: "Read nutrition and wellness articles from Dr. Anum Zahra.",
+  title: "Blog Post - Dn. Anum Zahra",
+  description: "Read nutrition and wellness articles from Dn. Anum Zahra.",
 };
 
 const blogPosts = {
@@ -202,7 +202,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
                   Want personalized nutrition guidance?
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Schedule a consultation with Dr. Anum Zahra to discuss your
+                  Schedule a consultation with Dn. Anum Zahra to discuss your
                   nutrition goals and create a personalized plan.
                 </p>
                 <a

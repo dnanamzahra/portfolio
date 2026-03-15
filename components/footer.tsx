@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* About Section */}
           <div className="md:col-span-2">
-            <h3 className="text-lg font-bold mb-3">Dr. Anum Zahra</h3>
+            <h3 className="text-lg font-bold mb-3">Dn. Anum Zahra</h3>
             <p className="text-sm opacity-90 leading-relaxed mb-4">
               A clinical dietitian committed to helping individuals improve
               their health through personalized nutrition plans, sustainable
@@ -82,7 +82,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-primary-foreground border-opacity-20 mt-8 pt-6 text-center">
           <p className="text-sm opacity-80">
-            © {currentYear} Dr. Anum Zahra. All rights reserved.
+            © {currentYear} Dn. Anum Zahra. All rights reserved.
           </p>
         </div>
 

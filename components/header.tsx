@@ -26,14 +26,14 @@ export default function Header() {
             <div className="relative w-10 h-10">
               <Image
                 src="/logo.jpg"
-                alt="Dr. Anum Zahra"
+                alt="Dn. Anum Zahra"
                 fill
                 className="object-cover rounded-full"
               />
             </div>
             <div className="hidden sm:block">
               <div className="text-lg font-bold text-primary">
-                Dr. Anum Zahra
+                Dn. Anum Zahra
               </div>
               <div className="text-xs text-muted-foreground">
                 Clinical Dietitian

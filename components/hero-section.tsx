@@ -29,7 +29,7 @@ export default function HeroSection() {
                 A Healthier You Starts with the Right Nutrition{" "}
               </h1>
               <p className="text-md md:text-lg font-semibold opacity-90">
-                Personalized diet plans by Clinical Dietitian Dr. Anum Zahra to
+                Personalized diet plans by Clinical Dietitian Dn. Anum Zahra to
                 help you manage weight, improve lifestyle diseases, and achieve
                 long-term wellness.
               </p>
@@ -64,7 +64,7 @@ export default function HeroSection() {
             >
               <Image
                 src="/doctor-profile.jpg"
-                alt="Dr. Anum Zahra - Clinical Dietitian"
+                alt="Dn. Anum Zahra - Clinical Dietitian"
                 fill
                 className="object-cover"
               />
@@ -72,7 +72,7 @@ export default function HeroSection() {
           </div> */}
 
           <div className="md:hidden flex flex-col items-center text-center">
-            <h2 className="text-3xl font-bold">Dr. Anum Zahra</h2>
+            <h2 className="text-3xl font-bold">Dn. Anum Zahra</h2>
             <p className="text-sm md:text-xl opacity-90 mt-2">
               Certified Clinical Dietitian & Nutrition Expert
             </p>
