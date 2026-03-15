@@ -44,10 +44,10 @@ export default function ServicesPreview() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="p-8 rounded-2xl bg-card border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              className="p-4 md:p-8 rounded-2xl bg-card border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="text-5xl mb-4">{service.icon}</div>
-              <h3 className="text-md md:text-xl font-bold text-foreground mb-3">
+              <div className="text-5xl mb-2 md:mb-4">{service.icon}</div>
+              <h3 className="text-md md:text-xl font-bold text-foreground mb-2 md:mb-3">
                 {service.title}
               </h3>
               <p className="text-muted-foreground text-xs leading-relaxed">

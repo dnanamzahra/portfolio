@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
-import { Button } from './ui/button';
-import { Menu, X } from 'lucide-react';
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+import { Button } from "./ui/button";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +12,9 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/services', label: 'Services' },
-    { href: '/blog', label: 'Blog' },
+    { href: "/", label: "Home" },
+    { href: "/services", label: "Services" },
+    { href: "/blog", label: "Blog" },
   ];
 
   return (
@@ -26,14 +26,18 @@ export default function Header() {
             <div className="relative w-10 h-10">
               <Image
                 src="/logo.jpg"
-                alt="Dr. Anum Zahra Logo"
+                alt="Dr. Anum Zahra"
                 fill
                 className="object-cover rounded-full"
               />
             </div>
             <div className="hidden sm:block">
-              <div className="text-lg font-bold text-primary">Dr. Anum Zahra</div>
-              <div className="text-xs text-muted-foreground">Clinical Dietitian</div>
+              <div className="text-lg font-bold text-primary">
+                Dr. Anum Zahra
+              </div>
+              <div className="text-xs text-muted-foreground">
+                Clinical Dietitian
+              </div>
             </div>
           </Link>
 
