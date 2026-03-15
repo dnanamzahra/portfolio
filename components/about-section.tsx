@@ -84,7 +84,7 @@ export default function AboutSection() {
         <h2 className="text-3xl md:text-4xl font-bold text-foreground text-balance text-left">
           About Dr. Anum Zahra
         </h2>
-        <p className="hidden md:blocktext-lg text-muted-foreground leading-relaxed text-wrap text-justify">
+        <p className="text-lg text-muted-foreground leading-relaxed text-wrap text-justify">
           Dr. Anum Zahra is a dedicated Clinical Dietitian and Nutritionist who
           helps individuals achieve better health through personalized nutrition
           and sustainable lifestyle changes. With professional experience at
@@ -120,7 +120,7 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className="px-3 flex flex-col mx-auto gap-6 justify-center text-center max-w-4xl items-center">
+      <div className="px-3 flex md:hidden flex-col mx-auto gap-6 justify-center text-center max-w-4xl items-center">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground text-balance text-left">
           About
         </h2>
