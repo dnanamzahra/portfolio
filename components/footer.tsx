@@ -1,8 +1,15 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { Mail, Phone, Linkedin, Instagram, Facebook, Calendar } from 'lucide-react';
-import { Button } from './ui/button';
+import Link from "next/link";
+import {
+  Mail,
+  Phone,
+  Linkedin,
+  Instagram,
+  Facebook,
+  Calendar,
+} from "lucide-react";
+import { Button } from "./ui/button";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,46 +17,49 @@ export default function Footer() {
   const socialLinks = [
     {
       icon: Linkedin,
-      href: 'https://www.linkedin.com/in/dr_anam_zahra',
-      label: 'LinkedIn',
+      href: "https://www.linkedin.com/in/dr_anam_zahra",
+      label: "LinkedIn",
     },
     {
       icon: Instagram,
-      href: 'https://www.instagram.com/dn_anum_zahra',
-      label: 'Instagram',
+      href: "https://www.instagram.com/dn_anum_zahra",
+      label: "Instagram",
     },
     {
       icon: Facebook,
-      href: 'https://www.facebook.com/dr_anam_zahra',
-      label: 'Facebook',
+      href: "https://www.facebook.com/dr_anam_zahra",
+      label: "Facebook",
     },
     {
       icon: Calendar,
-      href: 'https://calendar.app.google/sNpWAgmwrDM9bis7A',
-      label: 'Book Consultation',
+      href: "https://calendar.app.google/sNpWAgmwrDM9bis7A",
+      label: "Book Consultation",
     },
   ];
 
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'hello@dranam.com',
-      href: 'mailto:hello@dranam.com',
+      label: "Email",
+      value: "hello@dranam.com",
+      href: "mailto:hello@dranam.com",
     },
     {
       icon: Phone,
-      label: 'WhatsApp',
-      value: '+92 302 461 8062',
-      href: 'https://wa.me/923024618062',
+      label: "WhatsApp",
+      value: "+92 302 461 8062",
+      href: "https://wa.me/923024618062",
     },
   ];
 
   const quickLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/services', label: 'Services' },
-    { href: '/blog', label: 'Blog' },
-    { href: 'https://calendar.app.google/sNpWAgmwrDM9bis7A', label: 'Book Consultation' },
+    { href: "/", label: "Home" },
+    { href: "/services", label: "Services" },
+    { href: "/blog", label: "Blog" },
+    {
+      href: "https://calendar.app.google/sNpWAgmwrDM9bis7A",
+      label: "Book Consultation",
+    },
   ];
 
   return (
@@ -60,7 +70,9 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h3 className="text-lg font-bold mb-3">Dr. Anum Zahra</h3>
             <p className="text-sm opacity-90 leading-relaxed mb-4">
-              A Clinical Dietitian dedicated to helping individuals achieve better health through personalized nutrition, sustainable diet plans, and evidence-based guidance.
+              A Clinical Dietitian dedicated to helping individuals achieve
+              better health through personalized nutrition, sustainable diet
+              plans, and evidence-based guidance.
             </p>
           </div>
 
@@ -72,8 +84,18 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    target={link.href.startsWith('http') && !link.href.includes('calendar') ? '_blank' : undefined}
-                    rel={link.href.startsWith('http') && !link.href.includes('calendar') ? 'noopener noreferrer' : undefined}
+                    target={
+                      link.href.startsWith("http") &&
+                      !link.href.includes("calendar")
+                        ? "_blank"
+                        : undefined
+                    }
+                    rel={
+                      link.href.startsWith("http") &&
+                      !link.href.includes("calendar")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="text-sm hover:underline transition-colors opacity-90 hover:opacity-100"
                   >
                     {link.label}
@@ -127,7 +149,7 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="border-t border-primary-foreground border-opacity-20 mt-8 pt-8">
+        {/* <div className="border-t border-primary-foreground border-opacity-20 mt-8 pt-8">
           <h3 className="text-lg font-bold mb-4">Weekly Nutrition Tips</h3>
           <p className="text-sm opacity-90 mb-4">
             Get personalized nutrition insights delivered to your inbox.
@@ -142,7 +164,7 @@ export default function Footer() {
               Subscribe
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
