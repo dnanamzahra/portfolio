@@ -43,7 +43,7 @@ export default function HeroSection() {
                 </Button>
               </Link>
               <a
-                href="https://calendar.app.google/sNpWAgmwrDM9bis7A"
+                href="https://calendar.app.google/etfYMWr5rtPRdAUG7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -91,7 +91,7 @@ export default function HeroSection() {
                 </Button>
               </Link>
               <a
-                href="https://calendar.app.google/sNpWAgmwrDM9bis7A"
+                href="https://calendar.app.google/etfYMWr5rtPRdAUG7"
                 target="_blank"
                 rel="noopener noreferrer"
               >

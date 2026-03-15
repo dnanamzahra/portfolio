@@ -112,7 +112,7 @@ export default function ServicesPage() {
               better health with personalized nutrition guidance.
             </p>
             <a
-              href="https://calendar.app.google/sNpWAgmwrDM9bis7A"
+              href="https://calendar.app.google/etfYMWr5rtPRdAUG7"
               target="_blank"
               rel="noopener noreferrer"
             >

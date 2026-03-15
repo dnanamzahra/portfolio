@@ -57,7 +57,7 @@ export default function Header() {
           {/* CTA Button and Mobile Menu Toggle */}
           <div className="flex items-center gap-4">
             <a
-              href="https://calendar.app.google/sNpWAgmwrDM9bis7A"
+              href="https://calendar.app.google/etfYMWr5rtPRdAUG7"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -95,7 +95,7 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="https://calendar.app.google/sNpWAgmwrDM9bis7A"
+              href="https://calendar.app.google/etfYMWr5rtPRdAUG7"
               target="_blank"
               rel="noopener noreferrer"
               className="block"

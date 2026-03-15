@@ -49,6 +49,6 @@ export const socialLinks = [
     icon: Calendar,
     label: "Schedule",
     color: "hover:text-blue-600",
-    href: "https://calendar.app.google/sNpWAgmwrDM9bis7A",
+    href: "https://calendar.app.google/etfYMWr5rtPRdAUG7",
   },
 ];

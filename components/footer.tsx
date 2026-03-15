@@ -12,7 +12,7 @@ export default function Footer() {
     { href: "/services", label: "Services" },
     { href: "/blog", label: "Blog" },
     {
-      href: "https://calendar.app.google/sNpWAgmwrDM9bis7A",
+      href: "https://calendar.app.google/etfYMWr5rtPRdAUG7",
       label: "Book Consultation",
     },
   ];
