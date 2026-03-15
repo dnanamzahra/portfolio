@@ -95,19 +95,6 @@ export default function ServicesPage() {
                   <p className="text-muted-foreground text-xs leading-relaxed">
                     {service.description}
                   </p>
-                  <a
-                    href="https://calendar.app.google/sNpWAgmwrDM9bis7A"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button
-                      variant="outline"
-                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                    >
-                      Learn More
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </a>
                 </Card>
               ))}
             </div>
